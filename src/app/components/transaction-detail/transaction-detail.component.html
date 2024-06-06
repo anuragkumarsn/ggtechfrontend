@@ -1,0 +1,19 @@
+<div class="container mt-4 d-flex justify-content-center align-items-center">
+    <div class="shadow-lg p-3 mb-5 bg-body rounded w-50 p-3">
+      <form (ngSubmit)="updateTransaction()">
+        <div class="form-group d-flex align-items-center column-gap-2 justify-content-between">
+          <label for="id">ID:</label>
+          <input type="text" class="form-control" id="id" [value]="transaction.id" disabled>
+        </div>
+        <div class="form-group d-flex align-items-center column-gap-2 justify-content-between">
+          <label for="date">Date:</label>
+          <input type="text" class="form-control" id="date" [value]="transaction.date | dateFormat" disabled>
+        </div>
+        <div class="form-group d-flex align-items-center column-gap-2 justify-content-between">
+          <label for="comments">Comments:</label>
+          <input type="text" class="form-control" id="comments" [(ngModel)]="transaction.comments" name="comments" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Update</button>
+      </form>
+    </div>
+  </div>

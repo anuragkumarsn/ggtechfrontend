@@ -1,0 +1,47 @@
+.container {
+  margin-top: 20px;
+  height: 80vh;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.form-control,
+.btn {
+  border-radius: 5px;
+}
+
+.form-control,
+.btn {
+  border-radius: 5px;
+}
+
+.form-control{
+    width: 34vw;
+}
+
+@media (max-width: 992px) {
+    .form-group{
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .form-control{
+        width: 100%;
+    }
+}
